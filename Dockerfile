@@ -32,4 +32,4 @@ ADD jenkins.war /usr/share/jenkins/jenkins.war
 
 EXPOSE 8080
 
-ENTRYPOINT ["/jenkins_run.sh"]
+RUN ["chmod", "+x", "/jenkins_run.sh"]
